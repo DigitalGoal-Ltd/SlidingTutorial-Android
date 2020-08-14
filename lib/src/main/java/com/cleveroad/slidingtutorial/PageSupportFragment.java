@@ -54,6 +54,8 @@ public abstract class PageSupportFragment extends Fragment {
             return PageSupportFragment.this.getArguments();
         }
     };
+    
+    public PageSupportFragment() {}
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

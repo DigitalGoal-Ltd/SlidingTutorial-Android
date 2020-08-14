@@ -278,7 +278,7 @@ final class TutorialImpl<TFragment> {
 
         TutorialAdapterImpl(TutorialImpl<TFragment> tutorial) {
             mTutorial = tutorial;
-            noRollback = isMovingOnlyForward();
+            try{noRollback = isMovingOnlyForward();} catch (Exception e) {noRollback = true;}
         }
 
         TFragment getItem(int position) {
